@@ -1,0 +1,38 @@
+Naziv proizvoda	Tip proizvoda	Opis proizvoda	Vegetarijanski	Halal	Košer	Alergeni	Cijena
+Gibanica	ostalo	Ovo je slani tip kolaèa, punjena je orasima	NE	NE	NE	jaja, orasi	10
+Sirnica	ostalo	Ovo je slani tip kolaèa, punjen sirom	NE	NE	NE	jaja, mlijeko	12
+Burek	ostalo	Ovo je slani tip kolaèa, punjen mesom	NE	NE	NE	jaja	14
+Sacher torta	kolaè	Èokoladna torta u više slojeva	DA	DA	DA		16
+Maðarica	kolaè	Èokoladni tip torte u više slojeva, s korama	NE	NE	NE	jaja	10
+Kremšnita	kolaè		NE	NE	NE	jaja, orasi	44,09
+Šampita	kolaè		NE	DA	NE	jaja, mlijeko	49,34
+Piškote	keks		DA	NE	DA	jaja	27,06
+Èokoladni keksi – èisti	keks		NE	DA	NE		29,78
+Èokoladni keksi – brusnice	keks		NE	NE	NE	jaja	18,85
+Voæni kup	kolaè		DA	NE	NE	jaja, orasi	11,88
+Èokolada s èilijem	èokolada		NE	NE	DA	jaja, mlijeko	44,4
+Èokolada s citrusnim aromama	èokolada		NE	DA	NE	jaja	1,04
+Belgijske praline	èokolada		NE	DA	NE		41,14
+Praline s konjakom	èokolada		NE	NE	NE	jaja	27,73
+Macarons	keks	nekakvi keksi	NE	NE	NE	jaja, orasi	3
+Croisant	ostalo		NE	NE	NE	jaja, mlijeko	41,26
+Banana split	kolaè		NE	NE	NE	jaja	41,75
+Ganache torta	torta		NE	NE	NE		14,75
+ZKD torta	torta		NE	NE	NE	jaja	19,36
+Voæna torta	torta		DA	DA	NE	jaja, orasi	37,34
+Tiramisu	kolaè		DA	DA	DA	jaja, mlijeko	34
+Crne kocke	kolaè		NE	NE	NE	jaja	3,62
+Kesten štapiæ	kolaè		DA	DA	NE		12,71
+Kesten šnita	kolaè		DA	NE	NE	jaja	11,98
+Kokos štangice	keks		NE	NE	DA	jaja, orasi	21,55
+Palice	keks		DA	NE	NE	jaja, mlijeko	11,73
+Bananko	kolaè		DA	NE	NE	jaja	28
+Breskvice	keks		NE	NE	NE		35,79
+Èupavci	kolaè		NE	NE	NE	jaja	39,8
+Èokoladni mousse	kolaè		NE	DA	NE	jaja, orasi	43,23
+Išler	kolaè		DA	NE	NE	jaja, mlijeko	15,5
+Lambada	kolaè		DA	DA	NE	jaja	4,19
+Medenjaci	keks		DA	NE	NE		9,02
+Rafaelo kuglice	kolaè		NE	NE	NE	jaja	3,59
+Šubare	kolaè		NE	NE	DA	jaja, orasi	38,19
+Iloèki Traminac	piæe		DA	NE	NE		25,72

@@ -1,0 +1,16 @@
+{% extends "postsBasic.twig" %}
+
+{% block content %}
+	   <h2>Vijest</h3>
+
+		<h3>{{ news.title|upper }}</h3>
+    	<p>autor: {{ news.author }} | {{ news.date }}</p>
+					
+					{# Twig ima i bolji način za rezanje teksta, ali ovo je je najjednostavniji u ovom trenutku - vraća prvih 200 znakova teksta #}
+					 
+					{{ news.text }}
+					
+{% endblock %}
+					
+       
+      

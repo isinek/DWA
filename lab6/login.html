@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LogIn - ZKD j.d.o.o.</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 
+	Za LogIn u aplikaciju mogu se koristiti sljedeći podaci:
+		Username: Gost
+		Password: Gost
+	-->
+	<header class="container" style="height: 175px;">
+		
+	</header>
+	<section class="container content">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 login-logo-container">
+				<img src="http://placehold.it/350x150"  />
+				<p class="slogan">Non ut edam vivo, sed vivam edo.</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<form action="login.php" method="POST">
+					<table id="login-form">
+						<tbody>
+							<tr>
+								<td><label for="username">Korisničko ime: </label><br />
+								<input type="text" id="username" name="username" required/></td>
+							</tr>
+							<tr>
+								<td><label for="password">Lozinka: </label><br />
+								<input type="password" id="password" name="password" required/></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td><input type="submit" id="submit" value="Ulogiraj se" /></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="container">
+		<span>Copyright ZKD, 2015</span>
+	</footer>
+</body>
+</html>

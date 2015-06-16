@@ -1,0 +1,29 @@
+VAŽNO VAŽNO VAŽNO
+
+Dani programski kod neće raditi bez instalacije dodatnih biblioteka. 
+Biblioteke se instaliraju koristeći composer sustav (http://getcomposer.org)
+
+VAŽNO VAŽNO VAŽNO
+
+
+Framework + template + ORM
+
+U ovom primjeru su korišteni slijedeći elementi:
+* framework - Silex
+* template sustav - Twig
+* ORM (Object relational mapping) - Idiorm
+
+dodatno:
+* Twitter bootstrap za lakšu izradu stranica
+
+Važne datoteke i direktoriji:
+* composer.json - definirane su sve potrebne klase kako bi primjer radio
+* index.php  - osnovni controller za cijelu stranicu, baziran na Silex frameworku
+* views/ - sve stranice opisane u Twig template formatu 
+* logic/ - sve PHP skripte povezane s nužnom logikom potrebnom da stranice funkcioniraju
+
+
+Kako bi sve funkcioniralo, nužno je:
+- pokrenuti "composer install" za instalaciju svih potrebnih paketa. Pogledati http://getcomposer.org
+- uključiti podršku za .htaccess zbog URL rewritinga, a koji je već pripremljen. 
+- treba importirati podatke u MySQL bazu, te podesiti datoteku logic/idiormUse.php .

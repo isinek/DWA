@@ -1,0 +1,82 @@
+{# 
+
+
+Verzija svih postova S korištenjem nasljeđivanja templatea! 
+
+Osnovni template je postsBasic.twig, koji ima definiran blok "content".
+U ovom templateu se onda popunjava taj blok "content" s željenim podacima. Isti template koristi i onePost.twig, ali s drugačijim content blokom.
+
+
+
+#}
+{% extends "postsBasic.twig" %}
+
+{% block content %}
+		<div class="page-header">
+			<br />
+
+			<h1>Veliki zapis</h1>
+			<p class="lead">Fiksirani zapis koji ide od ruba do ruba. Napomena: ovo se ne povlači iz baze. <br />
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. 
+      </div>
+      
+	   <h3>Vijesti</h3>
+
+      {% for news in allnews %}
+        {# otvori div za redak #}
+		{% if (loop.index-1) % 3 == 0 %}
+			<div class="row"> 
+		{% endif %}
+				<div class="col-md-4 noBackground">
+					<h3>{{ news.title|upper }}</h3>{{ loop.index }}
+					<p>autor: {{ news.author }} | {{ news.date }}</p>
+					
+					{# Twig ima i bolji način za rezanje teksta, ali ovo je je najjednostavniji u ovom trenutku - vraća prvih 200 znakova teksta #}
+					 
+					{{ news.text[:200] }}
+					<a href="news/{{ news.id }}" > Pogledaj više </a>
+					
+					        
+				</div>
+		{# zatvori div za redak #}
+		{% if (loop.index) % 3 == 0 %}
+			</div > 
+		{% endif %}                
+	{% endfor %}		
+       
+      
+
+	<hr>
+      <h3>Tri jednako široka stupca</h3>
+      <div class="row">
+        <div class="col-md-4">Prvi stupac</div>
+        <div class="col-md-4"><h1>Drugi stupac</h1> Ovo je stvarno jedna trećina ekrana</div>
+        <div class="col-md-4">Treći stupac</div>
+      </div>
+
+      <h3>Tri nejednaka stupca</h3>
+      <p>Ovo su tri nejednaka stupca, gdje se širina ekrana dijeli na 12 jednakih djelova, i s klasama col-md-? treba uzeti svih 12 dijelova.
+      <div class="row">
+        <div class="col-md-3">Ovo je širine 3</div>
+        <div class="col-md-6">Ovo je širine 6</div>
+        <div class="col-md-3">Ovo je širine 3</div>
+      </div>
+
+      <h3>A mogu i samo 2 stupca</h3>
+      <p>Ovo su dva stupca nejednake širine</p>
+      <div class="row">
+        <div class="col-md-8 noBackground">Ovo je stupac s lijeve strane, širine 8</div>
+        <div class="col-md-4 noBackground">Ovo je stupac s desne strane, širine 4</div>
+      </div>
+
+      <h3>Puna širina</h3>
+      <p class="text-warning">Za punu širinu stranice ne treba dodavati nikakve opise za stupce</p>
+
+      <hr>
+      <h3>Dodatne informacije</h3>
+      <p class="text-warning">Dodatne informacije potražite na stranici <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> </p>
+
+	  <hr>
+{% endblock %}		
+   	 
+		

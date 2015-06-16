@@ -1,0 +1,114 @@
+h1, h2, h3, h4, h5, h6 {
+	color: #BC1F2A;
+	margin-top: 0;
+}
+
+.login-logo-container {
+	text-align: center;
+}
+
+section.content {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+section.content table {
+	border-collapse: separate;
+	border-spacing: 5px 2px;
+}
+
+section.content table.table {
+	border-collapse: collapse;
+}
+
+section.content article {
+	margin-bottom: 15px;
+}
+
+section.content article h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #BC1F2A;
+}
+
+section.content article h3 {
+	border-bottom: none;
+}
+
+p.slogan {
+	text-align: center;
+	font-style: italic;
+}
+
+#login-form {
+	text-align: left;
+}
+
+.home-button img {
+	width: 100%;
+}
+
+header {
+	background: #DE535D;
+	color: white;
+	padding: 10px 15px;
+}
+
+header .user-info {
+	text-align: right;
+}
+
+.simple-button {
+	display: inline-block;
+	padding: 5px 10px;
+	background: #BC1F2A;
+	border: 1px solid;
+	border-color: #DE535D #7A0A12 #7A0A12 #DE535D;
+	color: white;
+}
+
+.simple-button:hover,
+.simple-button:focus {
+	background: #7A0A12;
+	border-color: #7A0A12 #DE535D #DE535D #7A0A12;
+	color: white;
+	text-decoration: none;
+}
+
+nav {
+	margin-bottom: 20px;
+}
+
+.nav-link {
+	display: block;
+	padding: 5px 10px;
+	background: #BC1F2A;
+	border: 1px solid;
+	border-color: #DE535D #7A0A12 #7A0A12 #DE535D;
+	color: white;
+	text-align: center;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+	background: #7A0A12;
+	border-color: #7A0A12 #DE535D #DE535D #7A0A12;
+	color: white;
+	text-decoration: none;
+}
+
+.form-inline .form-group {
+	vertical-align: top;
+}
+
+footer {
+	background: #7A0A12;
+	padding: 10px 15px;
+	color: white;
+}
+
+@media screen and (max-width: 991px) {
+	#login-form {
+		  margin: 0 auto;
+	}
+}
